@@ -86,7 +86,8 @@ h1 {
     width: 1440px;
     max-width: calc(100%-47px);
     margin: 0 auto;
-    background: #fffcf4;
+    /* background: #fffcf4; */
+    background-color: #171100;
 }
 .nav {
     width: 1170px;
