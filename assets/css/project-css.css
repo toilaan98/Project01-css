@@ -13,7 +13,9 @@ font-style: normal; */
 }
 
 /* common */
-
+ul {
+    padding-left: 0;
+}
 h3 {
     font-family: "Poppins";
     font-style: normal;
@@ -27,6 +29,9 @@ h3 {
 
 a {
     text-decoration: none;
+}
+li {
+    list-style: none;
 }
 .content {
     width: 1170px;
@@ -71,8 +76,6 @@ h1 {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* common  end */
-/* ----------- */
 .pc {
     width: 1440px;
     margin: 0 auto;
@@ -80,30 +83,31 @@ h1 {
     display: 1;
     justify-content: 2;
 }
-.header {
-    position: relative;
-    height: 100vh;
-    width: 1440px;
-    max-width: calc(100%-47px);
-    margin: 0 auto;
-    /* background: #fffcf4; */
+/* common  end */
+/* ----------- */
+.fixed-header {
     background-color: #e9e6e0;
+    position: sticky;
+    /* padding: 10px 0; */
+    top: 0;
+    z-index: 2;
 }
-.nav {
-    width: 1170px;
-    padding-top: 36px;
+.fixed-header .nav {
+    background-color: red;
+
+    /* padding-top: 36px; */
+    padding: 12px 0;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
+
 .nav .navigation {
     display: flex;
     list-style: none;
     padding-left: 515px;
 }
-.signup {
-    margin-left: 40px;
-}
+
 .nav .navigation a {
     padding: 6px 21px;
     font-family: "Poppins";
@@ -115,14 +119,26 @@ h1 {
 
     color: #5f5b53;
 }
+.header {
+    position: relative;
+    height: 100vh;
+    width: 1440px;
+    max-width: calc(100%-47px);
+    margin: 0 auto;
+    /* background: #fffcf4; */
+    background-color: #e9e6e0;
+}
 
+.signup {
+    margin-left: 40px;
+}
 /* Herro-info */
 .herro {
     width: 1170px;
 }
 .herro .herro-img {
     width: 48.71%;
-    margin-top: 64px;
+    padding-top: 64px;
 }
 
 .herro .box {
@@ -536,4 +552,87 @@ h1 {
 }
 .feature .feature-cta .info .desc {
     margin-top: 16px;
+}
+.footer {
+    background-color: #2e2100;
+    padding-top: 88px;
+}
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .list {
+}
+.footer .column {
+    flex: 1;
+}
+.footer .column:nth-child(1) {
+    flex: 1.5;
+    margin-right: 145px;
+}
+.footer .column:nth-child(1) .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.75;
+    /* identical to box height, or 175% */
+
+    color: #ffffff;
+}
+.footer .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    color: #ffffff;
+}
+.footer .item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+
+    color: #bfbcb2;
+}
+.footer .dot {
+    color: yellow;
+}
+.footer .desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    /* or 186% */
+    text-align: center;
+    color: #bfbcb2;
+    margin: 29px 0;
+}
+.footer .list {
+    margin-top: 16px;
+}
+.footer .list .item {
+    margin-top: 12px;
+}
+.footer .column hr {
+    margin-top: 14px;
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+    color: #59554b;
+}
+.footer .social {
+    margin-top: 18px;
+    display: flex;
+}
+.footer .social-item {
+    padding-right: 18px;
+}
+.footer .social-item:nth-child(4) {
+    padding-right: 0;
 }
